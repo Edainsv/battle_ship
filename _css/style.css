@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #212121;
+}
+
+#game {
+	width: 400px;
+	height: 400px;
+	background: #515151;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#game .coordonate {
+	height: 40px;
+	width: 40px;
+	outline: 1px solid #111111;
+	cursor: pointer;
+}
+
+/* La selection de bateau */
+#select_ship {
+	text-align: center;
+	margin-left: 2%;
+	padding: 5px;
+	background: #515151;
+	border: 2px solid black;
+	width: 20%;
+	height: 400px;
+	max-width: 200px;
+}
+
+#select_ship .ships li {
+	list-style-type: none;
+}
+
+#select_ship .ships li button {
+	margin-top: 10px;
+	padding: 5px;
+	border-radius: 3px;
+	background: palegoldenrod;
+	display: block;
+	width: 70%;
+	margin: auto;
+	margin-top: 12px;
+	cursor: pointer;
+}
+
+#select_ship .selected_ship #selected_ship{
+	margin: 10px 0 10px;
+	text-align: center;
+}
+
+#select_ship #selected_ship {
+	color: palegoldenrod;
+}
+
+
